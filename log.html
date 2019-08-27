@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Login Page</title>
+</head>
+<body>
+<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F29%2Ff6%2F5c%2F29f65c7f102e08dcbb9562bebf53312c.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F415597871855785478%2F&docid=pu8y1LR5NlIXEM&tbnid=RbAbTFw6KwMoxM%3A&vet=10ahUKEwjh0N_G06LkAhWV_XMBHc-uCDYQMwiDASgXMBc..i&w=3223&h=4834&bih=913&biw=1280&q=light%20color%20images%20hd&ved=0ahUKEwjh0N_G06LkAhWV_XMBHc-uCDYQMwiDASgXMBc&iact=mrc&uact=8">
+<form name="loginForm" method="post" action="bio.php">
+<table width="20%" bgcolor="gray" align="center">
+
+<tr>
+<td colspan=2><center><font size=4><b>Login Page</b></font></center></td>
+</tr>
+
+<tr>
+<td>Username:</td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 name="pwd"></td>
+</tr>
+
+<tr>
+<td ><input type="Reset"></td>
+<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+</tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "Aakash" && form.pwd.value == "AAKASH@123")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+
+</body>
+</html>
